@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginEnd="5dp"
+    >
+    <LinearLayout
+        android:id="@+id/productItem"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewImageProduct"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/shopping_bag"
+            android:src="@drawable/shopping_bag" />
+
+        <TextView
+            android:id="@+id/txtViewProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/string_product_name" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/txtViewProductPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/string_product_price"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#FF2A00" />
+
+            <ImageButton
+                android:id="@+id/imageButtonAddToCart"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:src="@drawable/item_custom"
+                android:background="@drawable/shopping_cart_icon"
+                android:contentDescription="@string/add_to_cart" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

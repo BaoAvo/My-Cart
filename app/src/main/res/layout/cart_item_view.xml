@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/background_cart_item"
+    >
+
+    <ImageView
+        android:id="@+id/imgThumbnailCartItemView"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        android:src="@drawable/shopping_bag"
+        android:layout_gravity="center"
+        android:contentDescription="@string/view_thumbnail" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:gravity="center_vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10">
+            <TextView
+                android:id="@+id/tvNameCartItemView"
+                android:layout_weight="8"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="@string/string_product_name"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="32dp"
+                android:maxLines="2"
+                />
+            <TextView
+                android:id="@+id/tvSumPriceCartItemViewByQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:text="@string/string_total_product_price"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPriceCartItemViewOfProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="90dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/string_sum_price"
+                android:textColor="#FF2A00"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivAddQuantityOfProduct"
+                android:layout_gravity="center_vertical"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="3dp"
+                android:src="@drawable/add"
+                android:layout_marginBottom="6dp"
+                android:background="@color/baemin"
+                android:contentDescription="@string/add_product" />
+            <TextView
+                android:id="@+id/tvCurrentQuantityProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="@string/string_sum_price"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="-2dp"
+                />
+
+            <ImageView
+                android:id="@+id/ivSubtractQuantityOfProduct"
+                android:layout_gravity="center_vertical"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="3dp"
+                android:src="@drawable/remove"
+                android:background="@color/baemin"
+                android:layout_marginBottom="6dp"
+                android:contentDescription="@string/subtract_product" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

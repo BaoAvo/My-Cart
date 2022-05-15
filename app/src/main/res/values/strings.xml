@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MyCart</string>
+    <string name="string_search">Search</string>
+    <string name="string_product_name">Product Name</string>
+    <string name="string_product_price">Product Price</string>
+    <string name="string_title">My Cart</string>
+    <string name="string_quantity_product">Quantity</string>
+    <string name="string_sum_price">Sum price</string>
+    <string name="string_total_product_price">Total</string>
+    <string name="string_checkout">Checkout</string>
+    <string name="cart">Cart</string>
+    <string name="back">Back</string>
+    <string name="shopping_bag">Shopping bag</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="title_cart">Title cart</string>
+    <string name="view_thumbnail">View thumbnail</string>
+    <string name="add_product">Add product</string>
+    <string name="subtract_product">Subtract product</string>
+    <string name="btn_search">Button Search</string>
+</resources>
